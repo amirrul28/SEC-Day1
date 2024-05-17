@@ -4,20 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        .tbl1 {
+            border: 1.5px solid #2c3a47;
+            border-collapse: collapse;
+            width: 330px;
+            text-align: left;
+            
+        }
+      
+        .tbl1 th {
+            width: 37%;
+        }
+        .tbl1 th,
+        .tbl1 td {
+            border: 1px solid #2c3a47; 
+            padding: 1%;
+        }
+        .tbl2 {
+            width: 620px;
+            margin-left: 2%;
+        }
+        .tbl2 th,
+        .tbl2 td {
+            height: 40px;
+        }
+        .tbl2 th {
+            width: 40%;
+            text-align: left;
+        }
+        .tbl2 td {
+            position: relative;
+            text-align: center;
+            
+        }
+        .tbl2 img {
+            transition: opacity .5s ease-in-out;
+        }
+        .img-front {
+            width: 200px;
+            height: 31px;
+            position: absolute;
+            top: 3.5px; 
+            left: 83.5px;
+        }
+        .img-front:hover {
+            opacity: 0%;
+        }
+        .img-back {
+            width: 200px;
+            height: 30px;
+        }
+        a:hover {
+            font-size: 17px;
+        }
+      </style>
   </head>
-  <style>
-    table, th {
-        border: 1px solid #2c3a47;
-        padding: 2%;
-        width: 400px;
-    }
-    table, td {
-        border: 1px solid #2c3a47;
-        padding: 2%;
-        width: 320px;
-    }
-
-  </style>
   <body style="background-color: #f1f2f6;">
     <span style="
         color: #535a6a;
@@ -34,9 +76,14 @@
     ">
     WEB-RESUME
     </span>
+    <!-- 
     <img style="position:absolute; right: 140px; top: 110px; border: 1px solid #2f3542; border-radius: 10px;" src="images/Profile photo.png" alt="profile-photo" width="150px">
+    -->
     <br><h2>Personal Info</h2>
-    <table style="text-align: left; border: 2px solid #2c3a47; border-collapse: collapse;">
+            <div style="float: right; margin: -4% 10% 0 0">
+                <img style="border: 1px solid #2f3542; border-radius: 10px;" src="images/Profile photo.png" alt="profile-photo" width="150px">
+            </div><br>
+    <table class="tbl1">
         <tr>
             <th>Email</th>
             <td><a href="mailto:amirrulshukur@gmail.com">amirrulshukur@gmail.com</a><br /></td>
@@ -57,10 +104,16 @@
         </tr>
     </table>
     <br>
-    <h2 style="text-align: center;">Working Experience</h2>
-    <div style="position: relative;">
-        <img style="position: absolute; right: 27%; top: 130px;" src="images/fr-img.png" alt="fr-img" width="160px">
+    <!--<img style="position: absolute; right: 27%; top: 130px;" src="images/fr-img.png" alt="fr-img" width="160px">
         <img style="position: absolute; right: 14%; top: 120px;" src="images/ht-img.jpeg" alt="fr-img" width="160px">
+    -->
+    <h2 style="text-align: center;">Working Experience</h2>
+    <div style="float: right; margin: 7% 14% 0 0;">
+        <img style="margin-right: 10px;" src="images/fr-img.png" alt="fr-img" width="160px">
+        <img src="images/ht-img.jpeg" alt="fr-img" width="160px">
+    </div>
+    <div>
+
         <ol>
             <li style="font-weight: bold;">Mechanical Engineer</li>
             <p style="line-height: 0px;">Millennium E&C Sdn. Bhd</p>
@@ -132,6 +185,85 @@
                 <img src="images/logo kmkn.png" alt="kmkn-logo" width="180px"></a>
                 Apr 2014 - Apr 2015 (CGPA 3.64)
         </ul>
-    </p>
+    </p> <br><br>
+    <h2 style="text-align: center;">Computer Software Skills</h2>
+    <table class="tbl2">
+        <tr>
+            <th><li>2D AutoCAD Software</li></th>
+            <td>
+                <img class="img-back" src="images/pbar80.png" alt="pbar80">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        <tr>
+            <th><li>3D Solidworks Software</li></th>
+            <td>
+                <img class="img-back" src="images/pbar80.png" alt="pbar80">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        <tr>
+            <th><li>MS. Word, PowerPoint, & Excel</li></th>
+            <td>
+                <img class="img-back" src="images/pbar80.png" alt="pbar80">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        <tr>
+            <th><li>Adobe Illustrator</li></th>
+            <td>
+                <img class="img-back" src="images/pbar40.png" alt="pbar40">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        <tr>
+            <th><li>Adobe Photoshop</li></th>
+            <td>
+                <img class="img-back" src="images/pbar40.png" alt="pbar40">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        <tr>
+            <th><li>HTML, CSS, PHP, Javascript</li></th>
+            <td>
+                <img class="img-back" src="images/pbar40.png" alt="pbar40">
+                <img class="img-front" src="images/pbar.png" alt="pbar">
+            </td>
+        </tr>
+        
+    </table>
+    <br><br><br>
+    <h2 style="text-align: center;">Professional Certificate</h2>
+    <ul>
+        <li style="font-weight: bold;">
+            Solidworks Essentials Course
+        </li>
+        <p style="line-height: 0px;"><a href="https://www.cadcam.com.my/">IME CADCAM Training Centre</a></p>
+        <p style="font-style: italic; line-height: 10px;">Nov 2021</p>
+        <span><img src="images/SolidWorks-Logo.png" alt="sw-logo" width="150px"></span>
+        <br><br>
+        <li style="font-weight: bold;">
+            Software Engineering Conversion Bootcamp
+        </li>
+        <p style="line-height: 0px;"><a href="https://adnexio.jobs/adnexioedu">Adnexio Bootcamp</a></p>
+        <p style="font-style: italic; line-height: 10px;">May 2024 (On-going)</p>
+        <span><img src="images/html-logo.png" alt="html-logo" width="120px" height="103px"></span>
+        <span><img src="images/css-logo.png" alt="css-logo" width="100px"></span>
+        <span><img src="images/js-logo.png" alt="js-logo" width="100px"></span>
+        <span><img src="images/react-logo.png" alt="react-logo" width="100px"></span>
+        
+    </ul>
+    <section
+    style="background-color: #f5f6fa; height: 40px; text-align: center"
+  >
+    <span style="position: relative; top: 4px">
+      <img
+        src="images/icons8-copyright-100.png"
+        alt="cp-icon"
+        height="20px"
+      />
+    </span>
+    <span> 2024 - Prepared by Amirrul Shukur </span>
+  </section>
   </body>
 </html>
