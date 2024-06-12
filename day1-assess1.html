@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        .photo-info {
+            display: flex;
+            gap: 750px;
+            align-items: center;
+        }
         .tbl1 {
             border: 1.5px solid #2c3a47;
             border-collapse: collapse;
             width: 330px;
-            text-align: left;
-            
+            height: 150px;
+            text-align: left;   
         }
-      
         .tbl1 th {
             width: 37%;
         }
         .tbl1 th,
         .tbl1 td {
             border: 1px solid #2c3a47; 
-            padding: 1%;
+            padding-left: 2%;
         }
         .tbl2 {
             width: 620px;
@@ -80,9 +84,10 @@
     <img style="position:absolute; right: 140px; top: 110px; border: 1px solid #2f3542; border-radius: 10px;" src="images/Profile photo.png" alt="profile-photo" width="150px">
     -->
     <br><h2>Personal Info</h2>
-            <div style="float: right; margin: -4% 10% 0 0">
+            <!--<div style="float: right; margin: -4% 10% 0 0">
                 <img style="border: 1px solid #2f3542; border-radius: 10px;" src="images/Profile photo.png" alt="profile-photo" width="150px">
-            </div><br>
+            </div><br>-->
+    <div class="photo-info">
     <table class="tbl1">
         <tr>
             <th>Email</th>
@@ -103,6 +108,9 @@
             ></td>
         </tr>
     </table>
+
+    <img style="border: 1px solid #2f3542; border-radius: 10px;" src="images/Profile photo.png" alt="profile-photo" width="150px">
+    </div>
     <br>
     <!--<img style="position: absolute; right: 27%; top: 130px;" src="images/fr-img.png" alt="fr-img" width="160px">
         <img style="position: absolute; right: 14%; top: 120px;" src="images/ht-img.jpeg" alt="fr-img" width="160px">
